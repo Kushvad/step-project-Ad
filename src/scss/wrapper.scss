@@ -1,9 +1,14 @@
-.w{
+* {
+    margin: auto 0;
+}
+.wrapper{
     min-width: 320px;
     max-width: 1200px;
+    margin: auto;
 }
 
 .sect-0{
     background-color: #635C73;
-    height: 300px;
+    height: 240px;
+    width: 100%;
   }

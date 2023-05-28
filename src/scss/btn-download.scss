@@ -48,9 +48,17 @@
 }
 
 .section__btn-download{
-    // padding: 125px 10px 117px 10px;
     position: relative;
     align-items: center;
     text-align: center;
     justify-content: center;
+}
+
+.btn-download>div:hover{
+    background: white;
+    border: 2px solid #8D81AC;
+    box-sizing: border-box;
+}
+.btn-download__block>p:hover{
+    color: #8D81AC;
 }
