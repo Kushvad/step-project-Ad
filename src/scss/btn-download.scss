@@ -9,6 +9,8 @@
     /* top:50%; */
     left:50%;
     transform:translate(-50%, -50%);
+
+    transition: 1s;
 }
 
 .btn-download__title{
@@ -33,6 +35,8 @@
     width: 290px;
     height: 45px;
     margin-bottom: 12.5px;
+
+    transition: 1s;
 }
 
 .btn-download__text{
