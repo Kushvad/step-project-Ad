@@ -170,3 +170,19 @@ text-transform: uppercase;
 
 color: #FFFFFF;
 }
+
+@media(min-width:582px){
+    .pricing__title{
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 44px;
+    }
+}
+
+@media(min-width:1124px){
+    .pricing__title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    }
+}
