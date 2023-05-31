@@ -78,10 +78,10 @@ color: #848E97;
 }
 
 .photo-code{
-    position: absolute;
     min-width: 100%;
     max-width: 100%;
-    right: -10px;
+    
+    float: right;
 }
 
 .photo-code-2{
