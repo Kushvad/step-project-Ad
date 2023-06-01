@@ -4,9 +4,10 @@ const autoprefix = require("gulp-autoprefixer");
 const browsersync = require("browser-sync").create();
 const sass = require("gulp-sass")(require('sass'));
 const concat = require("gulp-concat");
-const imagemin = require("gulp-imagemin");
+// const imagemin = require("gulp-imagemin");
 const fileinclude = require("gulp-file-include");
 const minJs = require("gulp-minify");
+const clean = require("gulp-clean");
 
 function browserServe(stop){
     browsersync.init({
@@ -32,7 +33,7 @@ function browserReload(){
 }
 
 function css(stop){
-    gulp.src('./src/**/*.scss')
+    gulp.src('./src/scss/**/styles.scss')
     .pipe(concat('styles.min.scss'))
     .pipe(sass().on("error", sass.logError))
     .pipe(mincss())
@@ -51,12 +52,17 @@ function js(){
 
 function img(){
     return gulp.src('./src/img/*.*')
-    .pipe(imagemin())
+    // .pipe(imagemin())
     .pipe(gulp.dest('./dist/img'))
 }
 
 function watch(){
     gulp.watch('./src/**/*.*', gulp.series(gulp.parallel(html, css, img, js), browserReload))
+}
+
+function cleanFolder() {
+    return gulp.src('./dist')
+        .pipe(clean({force:true}));
 }
 
 
@@ -66,5 +72,5 @@ exports.html = html;
 exports.css = css;
 exports.img = img;
 
-exports.build = gulp.parallel(html, css, img,js);
+exports.build =gulp.series(cleanFolder, gulp.parallel(html, css, img,js)) ;
 exports.dev = gulp.series(html,css,img,js, browserServe,watch);
