@@ -1,10 +1,21 @@
 * {
-    margin: auto 0;
+    box-sizing: border-box;
 }
+
+a, li {
+    text-decoration: none;
+}
+
+body{
+  font-family: $main-font-family;
+}
+
+
 .wrapper{
     min-width: 320px;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .sect-0{
