@@ -15,9 +15,12 @@ text-align: center;
 color: #8D81AC;
 
 padding-bottom: 36px;
+
+@include tablet{
+    font-size: 42px;
+    line-height: 44px;
 }
-
-
+}
 
 
 .what-u-get__flex-block-1{
@@ -47,6 +50,10 @@ padding-bottom: 36px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include tablet{
+        align-items: flex-start;
+       margin-left: 30px;
+    }
 }
 
 .card__title{
@@ -71,6 +78,18 @@ line-height: 21px;
 text-align: center;
 
 color: #848E97;
+
+@include tablet{
+    text-align: start;
+}
+}
+
+.card-img{
+@include tablet{
+        width: 111px;
+        height: 64px;
+        object-fit:contain;
+}
 }
 
 .section__photo-of-code{
@@ -101,26 +120,6 @@ color: #848E97;
     .card{
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    .card__text{
-        text-align: start;
-    }
-
-    .card__flex-block-3{
-       align-items: flex-start;
-       margin-left: 30px;
-    }
-
-    .card-img{
-        width: 111px;
-        height: 64px;
-        object-fit:contain;
-    }
-
-    .what-u-get__title{
-        font-size: 42px;
-        line-height: 44px;
     }
 }
 
