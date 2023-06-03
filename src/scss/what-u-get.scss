@@ -3,23 +3,23 @@
 }
 
 .what-u-get__title{
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 38px;
+    font-family: $main-font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
 
-align-items: center;
-text-align: center;
+    align-items: center;
+    text-align: center;
 
-color: #8D81AC;
+    color: #8D81AC;
 
-padding-bottom: 36px;
+    padding-bottom: 36px;
 
-@include tablet{
-    font-size: 42px;
-    line-height: 44px;
-}
+    @include tablet{
+        font-size: 42px;
+        line-height: 44px;
+    }
 }
 
 
@@ -57,39 +57,39 @@ padding-bottom: 36px;
 }
 
 .card__title{
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 16px;
-align-items: center;
+    font-family: $main-font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
 
-color: #323232;
+    color: #323232;
 
-padding-bottom: 14px;
+    padding-bottom: 14px;
 }
 
 .card__text{
-    font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 21px;
-text-align: center;
+    font-family: $additional-font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
 
-color: #848E97;
+    color: #848E97;
 
-@include tablet{
-    text-align: start;
-}
+    @include tablet{
+        text-align: start;
+    }
 }
 
 .card-img{
-@include tablet{
-        width: 111px;
-        height: 64px;
-        object-fit:contain;
-}
+    @include tablet{
+            width: 111px;
+            height: 64px;
+            object-fit:contain;
+    }
 }
 
 .section__photo-of-code{
@@ -116,14 +116,14 @@ color: #848E97;
     flex-direction: column;
 }
 
-@media (min-width:481px){
+@media (min-width:$screen-tablet_min){
     .card{
         flex-direction: row;
         justify-content: space-between;
     }
 }
 
-@media (min-width:993px){
+@media (min-width:$screen-laptop_min){
     .what-u-get__group-flex{
         display: flex;
         flex-direction: row;
