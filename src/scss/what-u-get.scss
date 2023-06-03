@@ -92,6 +92,23 @@
     }
 }
 
+@media (min-width:$screen-laptop_min){
+    .card-img{
+        width: 111px;
+            height: 64px;
+            object-fit:contain;
+    }
+
+    .card__flex-block-3{
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+
+    .card__text{
+        text-align: left;
+    }
+}
+
 .section__photo-of-code{
     position: relative;
 }
