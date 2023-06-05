@@ -1,14 +1,26 @@
 # Step Project "Forkio"
-1. Список використаних технологій
-   1. --
-2. Cклад учасників проекту
-   1. Cисоєв Михайло Сергійович
-   2. --
+## Список використаних технологій
+    *browser-sync
+    *gulp
+    *gulp-autoprefixer
+    *gulp-clean
+    *gulp-clean-css
+    *gulp-concat
+    *gulp-imagemin
+    *gulp-jsmin
+    *gulp-sass
+    *media queries
 
 
-# Які завдання виконував кожен із учасників
+## Cклад учасників проекту
+   * Cисоєв Михайло Сергійович
+   * Кушнаренко Вадим
+
+
+## Які завдання виконував кожен із учасників
 
 1. Cисоєв Михайло(завдання №2)
-   1. блоки: Revolutionary Editor, Here is what you get, Fork Subscription Pricing та міні блок з кнопкою download
-2. --
-   1. --
+    *блоки: Revolutionary Editor, Here is what you get, Fork Subscription Pricing
+2. Кушнаренко Вадим (завдання №1 ) 
+   *блоки: header, testimonials, логіка секції header на js.
+Разом - збірка проетку за допомогою Gulp, створення загальних змінних та міксинів у sass, merge гілок 
