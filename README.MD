@@ -20,8 +20,8 @@
 ## Які завдання виконував кожен із учасників:
 
 1. Cисоєв Михайло(завдання №2)
-    *блоки: Revolutionary Editor, Here is what you get, Fork Subscription Pricing
+   * блоки: Revolutionary Editor, Here is what you get, Fork Subscription Pricing
 2. Кушнаренко Вадим (завдання №1 ) 
-   *блоки: header, testimonials, логіка секції header на js.
+   * блоки: header, testimonials, логіка секції header на js.
 
  Разом - збірка проетку за допомогою Gulp, створення загальних змінних та міксинів у sass, merge гілок 
